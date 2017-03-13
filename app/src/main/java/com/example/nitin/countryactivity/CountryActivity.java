@@ -56,7 +56,7 @@ public class CountryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main );
-       
+        System.out.println("Started activity");
 
         handler = new MyDatabaseHandler(this);
         List ls = handler.getAllCountryDetails();
